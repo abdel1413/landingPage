@@ -1,10 +1,11 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-  font-family: "Courier New", Courier, monospace;
+  /* font-family: "Courier New", Courier, monospace; */
   background-color: #eeeeee;
 }
 
@@ -30,13 +31,12 @@ html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border: 2px solid tomato;
+
   width: 100%;
   max-width: 300px;
   margin-left: 20px;
 }
 #nav-bar {
-  border: 2px solid blue;
   margin-right: 30px;
   width: 500px;
 }
@@ -55,5 +55,95 @@ html {
 }
 
 #hero {
-  border: 1px solid yellow;
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+}
+
+#hero input[type="email"] {
+  width: 100%;
+  max-width: 700px;
+  padding: 5px;
+
+  margin: 10px;
+}
+
+.submit-button {
+  width: 150px;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+
+.submit-button,
+.select {
+  background-color: #f5b567;
+  border: 1px solid #f5b567;
+  padding: 10px;
+}
+
+.submit-button:hover,
+.select:hover {
+  background-color: #f2a443;
+  border: 1px solid #f2a443;
+}
+
+.container {
+  border: 3px solid magenta;
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#feature {
+}
+
+.grid {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.icon i {
+  color: darkorange;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 20vh;
+  height: 125px;
+}
+
+#how_it_works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#video-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+
+  margin: 30px 0;
+}
+
+#video-container iframe {
+  margin: 10px;
+  display: block;
+}
+
+#pricing {
+  border: 1px solid red;
+  margin: 10px;
+  display: flex;
+  background-color: cadetblue;
 }
