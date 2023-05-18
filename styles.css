@@ -18,7 +18,6 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  border: 3px solid green;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,7 +30,6 @@ html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
   width: 100%;
   max-width: 300px;
   margin-left: 20px;
@@ -56,7 +54,6 @@ html {
 
 #hero {
   margin-top: 50px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,7 +66,6 @@ html {
   width: 100%;
   max-width: 700px;
   padding: 5px;
-
   margin: 10px;
 }
 
@@ -93,13 +89,9 @@ html {
 }
 
 .container {
-  border: 3px solid magenta;
   max-width: 1020px;
   width: 100%;
   margin: 0 auto;
-}
-
-#feature {
 }
 
 .grid {
@@ -132,18 +124,230 @@ html {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-
   margin: 30px 0;
 }
 
 #video-container iframe {
   margin: 10px;
   display: block;
+  width: 500px;
 }
 
 #pricing {
-  border: 1px solid red;
-  margin: 10px;
   display: flex;
-  background-color: cadetblue;
+  flex-direction: row;
+  /* justify-content: center; */
+}
+
+.price-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: 100%;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  border: solid 1px black;
+  margin: 10px;
+  width: calc(100% / 3);
+
+  border-radius: 5px;
+}
+
+.product > .title {
+  width: 100%;
+  background-color: #ddd;
+  padding: 15px 0;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500px;
+}
+
+.product .price {
+  margin: 10px 0;
+}
+
+.product ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 400px;
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 100px;
+  margin: 15px auto;
+}
+
+.product .select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer {
+  height: 70px;
+  margin-top: 30px;
+  background-color: #dddddd;
+  padding: 10px;
+}
+
+#footer ul {
+  display: flex;
+  list-style: none;
+  float: right;
+  justify-content: space-between;
+
+  margin: 5px 0;
+  margin-right: 10px;
+  clear: both;
+  width: 100%;
+  max-width: 200px;
+}
+
+#footer ul a {
+  text-decoration: none;
+  color: black;
+}
+
+#footer span {
+  float: right;
+  clear: both;
+}
+
+@media only screen and (max-width: 920px) {
+  #header {
+    display: flex;
+  }
+
+  #header-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    margin-left: 20px;
+  }
+
+  #nav-bar {
+    margin-right: 30px;
+    width: calc(500px / 2);
+  }
+
+  #nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-size: 0.9rem;
+    color: black;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .price-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 720px) {
+  #nav-bar ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #header {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+  }
+
+  #header #header-img {
+    border: 1px solid green;
+    margin-bottom: 15px;
+  }
+
+  #nav-bar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-size: 0.9rem;
+    color: black;
+    margin-top: 0px;
+  }
+  #hero {
+    margin-top: 70px;
+  }
+
+  #nav-bar {
+    margin-right: 30px;
+    width: calc(500px / 2);
+  }
+  .grid {
+    margin: 0;
+  }
+
+  .grid i {
+    margin: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #header {
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+  }
+  .icon i {
+    display: none;
+  }
+
+  .children {
+    margin: 15px 0;
+  }
+  .children h2 {
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  #hero {
+    margin-top: 110px;
+    margin-bottom: 0;
+
+    padding-bottom: 0;
+  }
+  #header {
+    margin-bottom: 20px;
+    padding: 10px 0;
+  }
+
+  #header-img {
+    margin-bottom: 20px;
+  }
+
+  .product {
+    width: 350px;
+    border-radius: 15px;
+  }
+  .product > .title {
+    border-radius: 20px;
+  }
 }
